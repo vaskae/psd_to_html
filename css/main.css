@@ -1,3 +1,4 @@
+
 /*! HTML5 Boilerplate v6.0.1 | MIT License | https://html5boilerplate.com/ */
 
 /*
@@ -97,6 +98,35 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+   
+   
+ @font-face{
+    font-family:"Cubano-Regular";
+    src:url(../fonts/Cubano-Regular.otf);
+    
+}     
+   
+@font-face{
+    font-family:"BrandonGrotesque-Bold";
+    src:url(../fonts/BrandonGrotesque-Bold.otf);
+    
+}
+
+@font-face{
+    font-family:"BrandonGrotesque-Light";
+    src:url(../fonts/BrandonGrotesque-Light.otf);
+    
+}
+
+@font-face{
+    font-family:"BrandonGrotesque-Regular";
+    src:url(../fonts/BrandonGrotesque-Regular.otf);
+    
+}
+
+
+   
+   
 *{padding: 0; margin: 0;}
 header{
     background: url(../img/Image.jpg) center;
@@ -117,7 +147,11 @@ header{
 
 #developement {
 }
+body{
+ 
 
+
+}
 #banding {
 }
 
@@ -139,14 +173,15 @@ header{
     color: white;
     padding: 73px 0;
     overflow: hidden;
-   padding-top:70px;
+	padding-top:70px;
 }
 
 footer{
    background: #7690c5;
     overflow: hidden;
     color: white;
-    padding-top:70px;
+	padding-top:70px;
+    
 }
 .wrapper {
     width: 80%;
@@ -163,11 +198,13 @@ footer{
 
 .logo {
     float: left;
-    
+     font-family:"Cubano-Regular";
 }
 .logo span{
+  
     color: white;
     font-size: 24px;
+	font-weight:bolder;
     
     
 }
@@ -181,6 +218,8 @@ footer{
 }
 
 .nav ul li{
+font-family:BrandonGrotesque-Regular;
+font-weight:800;
    float: left;
 font-size: 20px;
 padding: 5px 14px;
@@ -208,34 +247,37 @@ padding: 5px 14px;
     padding-top: 150px;
 }
 
-
-.caption button:hover{
-
- color: #7690c5;
- border: 2px solid #7690c5;
-
-}
-
-
 .caption p{
+font-family:BrandonGrotesque-light;
     font-size: 30px;
-font-weight: normal;
+
     
 }
 
 .caption h1{
-   font-size: 70px; 
+font-family:BrandonGrotesque-Bold;
+   font-size: 66.99pt; 
+   font-weight: normal;
 }
 .caption button{
+   font-family:BrandonGrotesque-Bold;
     border: 2px solid white;
    background: none;
    color: white;
    border-radius: 5px;
    padding: 20px 65px;
-   font-size: 22px;
+   font-size: 22pt;
     
 }
 
+.caption button:hover{
+
+color: #7690c5;
+ border: 2px solid #7690c5;
+   
+
+
+}
 .web_devlopement{
     
     overflow: hidden;
@@ -254,22 +296,23 @@ font-weight: normal;
    
 }
 .web_devlopement h1{
-    
+    font-family:BrandonGrotesque-Light;
    text-align: center;
 font-size: 53px;
-font-weight: 100;
+
+font-weight:100;
 }
 
 .web_devlopement p{
     color: #999292;
     padding-top: 10px;
-    font-size: 18px;
-    
+    font-size: 18 pt;
+    font-family:BrandonGrotesque-Regular;
   
 }
 
 .web_devlopement h1 strong{
-    font-weight: bold;
+   font-family:BrandonGrotesque-Bold;
 }
 .single_fiture {
    width: 400px;
@@ -278,6 +321,7 @@ font-weight: 100;
 }
 
 .fiture_icon {
+    
     background: black;
     width: 70px;
     height: 70px;
@@ -305,12 +349,14 @@ font-weight: 100;
 }
 
 .fiture_description h1 {
+ font-family:BrandonGrotesque-Regular;
     font-size: 24px;
     line-height: 20px;
     
 }
 
 .fiture_description p {
+     font-family:BrandonGrotesque-Regular;
     font-size: 16px;
     line-height: 20px;
     color:#999292;
@@ -320,6 +366,7 @@ font-weight: 100;
 }
 
 .client_title h1{
+ font-family:BrandonGrotesque-light;
     font-size: 60px;
     font-weight: 100;
     line-height: 20px;
@@ -329,10 +376,13 @@ font-weight: 100;
 }
 
 .client_title p{
+    font-family:BrandonGrotesque-Regular;
     font-size: 18px;
     color:#999292;
+	font-weight:normal;
 }
 .client_data {
+    font-family:BrandonGrotesque-Regular;
     width: 100%;
     float: none;
     clear: both;
@@ -386,6 +436,7 @@ margin-bottom: 40px;
 }
 
 .team_title h1{
+  font-family:BrandonGrotesque-Light;
     font-size: 70px;
 font-weight: 100;
 line-height: 0px;
@@ -393,11 +444,12 @@ line-height: 0px;
 }
 
 .team_title h1 strong{
-    font-weight: bold;
+    font-family:BrandonGrotesque-Bold;
    
 }
 
 .team_title h3{
+   font-family:BrandonGrotesque-Regular;
    font-size: 25px;
    font-weight: 100;
     color:#999292;
@@ -409,8 +461,8 @@ line-height: 0px;
 
 .single_member {
    width: 223px;
-float: left;
-padding: 20px 64px  10px 64px;
+   float: left;
+    padding: 20px 64px  10px 64px;
 
 }
 
@@ -426,12 +478,14 @@ padding: 20px 64px  10px 64px;
     padding: 10px;
 }
 .member_name h1{
+  font-family:BrandonGrotesque-Regular;
   font-size: 18px;
 font-weight: bolder;
 line-height: 10px;  
 }
 
 .member_name h3{
+font-family:BrandonGrotesque-Regular;
    font-size: 14px;
 font-weight: 100; 
 }
@@ -461,6 +515,7 @@ margin: 6px;
     
 }
 .team_info {
+   font-family:BrandonGrotesque-Regular;
     width: 60%;
 margin: 15px auto;
 text-align: center;
@@ -479,16 +534,18 @@ font-weight: 100;
 }
 
 .contact_info h1{
+   font-family:BrandonGrotesque-light;
    font-size: 59px;
    font-weight: 100;
     line-height: 10px;
 }
 
 .contact_info h1 strong{
-    font-weight: bold;
+    font-family:BrandonGrotesque-Bold;
     
 }
 .contact_info p{
+font-family:BrandonGrotesque-Regular;
    font-size: 18px;
    font-weight: 100;
     margin-bottom: 20px;
@@ -513,8 +570,9 @@ font-weight: 100;
 }
 
 .singal_media span{
+     font-family:BrandonGrotesque-Regular;
     padding-left: 10px;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 800;
 }
 
@@ -526,9 +584,10 @@ font-weight: 100;
 }
 
 .contact_form input[type=text],input[type=email] {
+    font-family:BrandonGrotesque-Regular;
     padding: 16px 168px 16px 25px;
-margin: 8px;
-text-align: left;
+    margin: 8px;
+    text-align: left;
     border-radius:5px; 
     color:#bbbbbb;
     font-weight: 400;
@@ -537,10 +596,11 @@ text-align: left;
     font-size: 16px
 }
 .contact_form textarea {
+    font-family:BrandonGrotesque-Regular;
     height: 200px;
     width: 355px; 
-margin: 8px;
-text-align: left;
+    margin: 8px;
+   text-align: left;
     padding: 16px 0px 0px 25px;
       border-radius:5px; 
     color:#bbbbbb;
@@ -548,6 +608,7 @@ text-align: left;
     font-size: 16px;
 }
 .contact_form input[type=submit] {
+    font-family:BrandonGrotesque-Regular;
     border: none;
     padding: 8px 30px;
     background:#99abd0;
@@ -563,9 +624,10 @@ text-align: left;
     
 }
 .footer_bottom {
+ font-family:BrandonGrotesque-Regular;
     border-top: 1px solid #87a0d2;
     text-align: center;
-    font-size: 14px;
+    font-size: 12px;
     padding: 20px 0;
     margin-top: 100px;
     border-radius:5px; 
